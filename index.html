@@ -12,21 +12,23 @@
 
 <style>
 
+html {
+  scroll-behavior:smooth;
+}
+
 body{
 	overflow-x:hidden;
+    height:100%;
+  	margin:0;
 }
 
-div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: white;
-  padding: 50px;
-  font-size: 20px;
+.main {
+	font-family:'lato',sans-serif;
+    font-size:15px;
 }
 
-.titleheader {
-	background:#000000;
+#home {
+	background:black;
     color:white;
     padding:90px;
     font-family:'assistant',sans-serif;
@@ -34,35 +36,162 @@ div.sticky {
     font-kerning:none;
 }
 
-.blackbg {
-	background-color:black;
-    color:white;
-    padding:20px;
+div.sticky {
+	position:-webkit-sticky;
+   	position:sticky;
+  	top:0;
+  	background-color:black;
+  	color:white;
+  	padding:20px;
+  	font-size:15px;
+  	text-align:center;
+  	font-family:'lato',sans-serif;
 }
 
-div.sticky {
-  position:-webkit-sticky;
-  position:sticky;
-  top: 0;
-  background-color: yellow;
-  padding: 50px;
-  font-size: 20px;
+#about {
+	height:700px;
+    background-color:#ffffff;
+    margin:auto;
+    margin-top:100px;
+    text-align:justify;
+    width:400px;
+    font-family:'lato',sans-serif;
+}
+
+.spinny {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  font-size: 4vw;
+  transform-style: preserve-3d;
+  animation: three-dimensions-circle 30s linear infinite;
+}
+li {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+li:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translateY(-125px) rotateX(90deg);
+}
+li:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(30deg) translateY(-125px) rotateX(90deg);
+}
+li:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(60deg) translateY(-125px) rotateX(90deg);
+}
+li:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(90deg) translateY(-125px) rotateX(90deg);
+}
+li:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(120deg) translateY(-125px) rotateX(90deg);
+}
+li:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(150deg) translateY(-125px) rotateX(90deg);
+}
+li:nth-child(7) {
+  transform: translate(-50%, -50%) rotate(180deg) translateY(-125px) rotateX(90deg);
+}
+li:nth-child(8) {
+  transform: translate(-50%, -50%) rotate(210deg) translateY(-125px) rotateX(90deg);
+}
+li:nth-child(9) {
+  transform: translate(-50%, -50%) rotate(240deg) translateY(-125px) rotateX(90deg);
+}
+li:nth-child(10) {
+  transform: translate(-50%, -50%) rotate(270deg) translateY(-125px) rotateX(90deg);
+}
+li:nth-child(11) {
+  transform: translate(-50%, -50%) rotate(300deg) translateY(-125px) rotateX(90deg);
+}
+li:nth-child(12) {
+  transform: translate(-50%, -50%) rotate(330deg) translateY(-125px) rotateX(90deg);
+}
+@keyframes three-dimensions-circle {
+  0% {
+    transform: rotateX(-100deg) rotate(0);
+  }
+  100% {
+    transform: rotateX(-100deg) rotate(-360deg);
+  }
+}
+
+
+#section2 {
+	height:700px;
+    background-color:#000000;
+    color:white;
+}
+
+
  
 </style>
 </head>
 <body>
-    
-<div class="titleheader">
-   <p style="font-size:60px;letter-spacing:10px;line-height:0px;text-transform:uppercase;">Annie Hong</p>
-   <i><p style="font-size:13px;font-family:'Noto Serif JP', serif;;letter-spacing:3px;line-height:0.4;">four thousand and two.</p></i>
+
+<div class="sticky">
+
+<a href="#home">home</a>
+<a href="#about">about</a>
+<a href="#section2">section #2</a>
+
 </div>
 
 
-<div class="sticky">hello</div>
 
-<div class="titleheader">
-ed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sa
+<div class="main" id="home">
+
+   <p style="font-size:60px;letter-spacing:10px;text-transform:uppercase;">Annie Hong</p>
+   
+   <i><p style="font-size:13px;font-family:'Noto Serif JP', serif;letter-spacing:3px;">four thousand and two.</p></i>
+ <br><br><br> <br><br> <br><br><br> <br><br> 
 </div>
+
+
+<div class="main" id="about">
+<br><br><br><br><br><br><br><br><br>
+<div class="spin">
+<ul style="font-family:'Noto Serif JP', serif;">
+  <li>h</li>
+  <li>o</li>
+  <li>n</li>
+  <li>g</li>
+  <li>h</li>
+  <li>o</li>
+  <li>n</li>
+  <li>g</li>
+  <li>h</li>
+  <li>o</li>
+  <li>n</li>
+  <li>g</li>
+</ul></div>
+<br><br><br><br><br>
+<p>hi. my name is annie. i am a computer scientist that specializes in machine learning. i mostly code in python but i am familiar with html and css as well. i love eating mangoes and some waffles haha. contact me for freelance design or coding. thanks for reading.</p>
+<h2 style="">skills</h2>
+languages: python, html, css
+<br>
+<br>
+frameworks/technologies:
+ </div>
+  
+<div class="main" id="section2">
+  <h2>Section 2</h2>
+  
+
+</div>
+  
+  
+</div>
+
+<script>
+
+</script>
 
 </body>
 </html>
