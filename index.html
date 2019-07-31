@@ -8,7 +8,7 @@
 
 <meta charset="utf-8">
 <title>Annie Hong</title>
-<link rel="icon" href="http://static.tumblr.com/jsbzmqo/8Wxn6l1rc/white_heart.png" />
+<link rel="icon" href="https://img.icons8.com/ios-glyphs/30/000000/hearts.png" />
 
 <style>
 
@@ -20,6 +20,23 @@ body{
 	overflow-x:hidden;
     height:100%;
   	margin:0;
+}
+
+a {
+  transition: background-size 0.4s ease;
+  background: linear-gradient(to bottom, transparent 2%, #a4c4d2 0) 	center center/0% 75% no-repeat;
+  font-family:lato;
+  font-size:14px;
+  padding: 0 6px 2px 6px;
+  color:#fff;
+  letter-spacing:2px;
+  text-decoration:none;
+}
+a:hover {
+  background-size: 100% 100%;
+}
+a:active {
+  background-size: 80% 100%;
 }
 
 .main {
@@ -35,6 +52,46 @@ body{
     text-align:center;
     font-kerning:none;
 }
+
+blockquote {
+  font-size:15px;
+}
+cite {
+  display:block;
+  text-align:center;
+  font-family:lato, sans-serif;
+  font-size:10px;
+  letter-spacing:1px;
+  margin-top:10px;
+  color: #aaa;
+  font-style:normal;
+
+}
+blockquote q {
+  font-family:'Noto Serif JP', serif;;
+  letter-spacing:3px;
+}
+blockquote q span {
+  will-change: opacity, filter;
+  opacity: 0;
+  filter: blur(0px);
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q:before {
+  content: open-quote;
+  margin-right: 0.8rem;
+}
+q:after {
+  content: close-quote;
+}
+q:before, q:after {
+  color: #ccc;
+  font-size:0px;
+}
+
 
 div.sticky {
 	position:-webkit-sticky;
@@ -68,7 +125,7 @@ div.sticky {
 ul {
   margin: 0;
   list-style: none;
-  font-size: 4vw;
+  font-size: 2.5vw;
   transform-style: preserve-3d;
   animation: three-dimensions-circle 30s linear infinite;
 }
@@ -78,40 +135,40 @@ li {
   left: 50%;
 }
 li:nth-child(1) {
-  transform: translate(-50%, -50%) rotate(0deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(0deg) translateY(-150px) rotateX(90deg);
 }
 li:nth-child(2) {
-  transform: translate(-50%, -50%) rotate(30deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(30deg) translateY(-150px) rotateX(90deg);
 }
 li:nth-child(3) {
-  transform: translate(-50%, -50%) rotate(60deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(60deg) translateY(-150px) rotateX(90deg);
 }
 li:nth-child(4) {
-  transform: translate(-50%, -50%) rotate(90deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(90deg) translateY(-150px) rotateX(90deg);
 }
 li:nth-child(5) {
-  transform: translate(-50%, -50%) rotate(120deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(120deg) translateY(-150px) rotateX(90deg);
 }
 li:nth-child(6) {
-  transform: translate(-50%, -50%) rotate(150deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(150deg) translateY(-150px) rotateX(90deg);
 }
 li:nth-child(7) {
-  transform: translate(-50%, -50%) rotate(180deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(180deg) translateY(-150px) rotateX(90deg);
 }
 li:nth-child(8) {
-  transform: translate(-50%, -50%) rotate(210deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(210deg) translateY(-150px) rotateX(90deg);
 }
 li:nth-child(9) {
-  transform: translate(-50%, -50%) rotate(240deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(240deg) translateY(-150px) rotateX(90deg);
 }
 li:nth-child(10) {
-  transform: translate(-50%, -50%) rotate(270deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(270deg) translateY(-150px) rotateX(90deg);
 }
 li:nth-child(11) {
-  transform: translate(-50%, -50%) rotate(300deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(300deg) translateY(-150px) rotateX(90deg);
 }
 li:nth-child(12) {
-  transform: translate(-50%, -50%) rotate(330deg) translateY(-125px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(330deg) translateY(-150px) rotateX(90deg);
 }
 @keyframes three-dimensions-circle {
   0% {
@@ -129,6 +186,12 @@ li:nth-child(12) {
     color:white;
 }
 
+#works {
+	height:700px;
+    background-color:#ffffff;
+    color:black;
+}
+
 
  
 </style>
@@ -140,6 +203,7 @@ li:nth-child(12) {
 <a href="#home">home</a>
 <a href="#about">about</a>
 <a href="#section2">section #2</a>
+<a href="#works">works</a>
 
 </div>
 
@@ -147,9 +211,13 @@ li:nth-child(12) {
 
 <div class="main" id="home">
 
-   <p style="font-size:60px;letter-spacing:10px;text-transform:uppercase;">Annie Hong</p>
+   <p style="font-size:100px;letter-spacing:10px;text-transform:uppercase;">Annie Hong</p>
    
-   <i><p style="font-size:13px;font-family:'Noto Serif JP', serif;letter-spacing:3px;">four thousand and two.</p></i>
+   <blockquote contenteditable="true"><q>“What we think, we become.”</q>
+  <cite>Gautama Buddha</cite>
+</blockquote>
+   
+
  <br><br><br> <br><br> <br><br><br> <br><br> 
 </div>
 
@@ -182,15 +250,82 @@ frameworks/technologies:
   
 <div class="main" id="section2">
   <h2>Section 2</h2>
-  
-
+ 
 </div>
-  
-  
+
+<div class="main" id="works">
+  <h2>Section 2</h2>
+ 
 </div>
 
 <script>
 
+function splitWords() {
+  let quote = document.querySelector("blockquote q");
+  quote.innerText.replace(/(<([^>]+)>)/ig,"");
+  quotewords = quote.innerText.split(" "),
+  wordCount = quotewords.length;
+  quote.innerHTML = "";
+  for (let i=0; i < wordCount; i++) {
+    quote.innerHTML +="<span>"+quotewords[i]+"<span>";
+    if (i < quotewords.length - 1) {
+      quote.innerHTML += " ";
+    }
+  }
+  quotewords = document.querySelectorAll("blockquote q span");
+  fadeWords(quotewords);
+}
+
+function getRandom(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function fadeWords(quotewords) {
+  Array.prototype.forEach.call(quotewords, function(word) {
+    let animate = word.animate([{
+      opacity: 0,
+      filter: "blur("+getRandom(2,5)+"px)"
+    }, {
+      opacity: 1,
+      filter: "blur(0px)"
+    }], 
+    { 
+      duration: 1000,
+      delay: getRandom(500,3300),
+      fill: 'forwards'
+    } 
+   )
+  })
+}
+
+
+splitWords();
+
+const triggers = document.querySelectorAll('a');
+const highlight = document.createElement('span');
+highlight.classList.add('highlight');
+document.body.append(highlight);
+
+function highlightLink() {
+  const linkCoords = this.getBoundingClientRect();
+  console.log(linkCoords);
+
+  const coords = {
+    width: linkCoords.width,
+    height: linkCoords.height,
+    top: linkCoords.top + window.scrollY,
+    left: linkCoords.left + window.scrollX
+  };
+
+  highlight.style.width = `${coords.width}px`;
+  highlight.style.height = `${coords.height}px`;
+  highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
+}
+
+triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));
+
+// From https://codepen.io/SJF
+triggers.forEach(a => a.addEventListener('focus', highlightLink));
 </script>
 
 </body>
