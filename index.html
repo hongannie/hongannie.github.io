@@ -190,6 +190,72 @@ li:nth-child(12) {
 	height:700px;
     background-color:#ffffff;
     color:black;
+    text-align:center;
+}
+
+.zigzagblack {
+  background: white;
+}
+.zigzagblack:after {
+    background: linear-gradient(-45deg, black 14px, transparent 0), linear-gradient(45deg, black 14px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size:28px 28px;
+    content: " ";
+    display: block;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+.zigzagwhite {
+    margin-top: -27px;
+}
+.zigzagwhite:after {
+    background: linear-gradient(-45deg, white 14px, transparent 0), linear-gradient(45deg, white 14px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size:28px 28px;
+    content: " ";
+    display: block;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+
+.myworks {
+  margin: 0 auto;
+  text-align: center;
+  text-decoration:none;
+}
+
+.myworks a{
+  margin: 0 auto;
+  text-align: center;
+  text-decoration:none;
+  color:black;
+}
+
+.myworks a:hover{
+	letter-spacing:5px;
+    text-decoration:none;
+    color:white;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    user-select: none;
+    margin: 0 auto;
+}
+a img { 
+	display:none; 
+}
+ a:hover img {
+ 	display:block;
+    width:300px;
+    
 }
 
 
@@ -254,7 +320,22 @@ frameworks/technologies:
 </div>
 
 <div class="main" id="works">
-  <h2>Section 2</h2>
+<br><br><br><br><br>
+  <h2>works and projects</h2>
+  
+  <div class="zigzagblack">
+</div>
+<div class="zigzagwhite">
+</div>
+  
+  <div class="myworks">
+   	 <h1><a href="www.google.com">yes<img src="https://dvdz.design/random/imgs/img2.jpg" /></a></h1>
+   	 <h1><a href="#">what<img src="https://dvdz.design/random/imgs/img2.jpg" /></a></h1>
+    	<h1><a href="#">yes<img src="https://dvdz.design/random/imgs/img2.jpg" /></a></h1>
+    	<h1><a href="#">yes<img src="https://dvdz.design/random/imgs/img2.jpg" /></a></h1>
+	<h1><a href="#">yes<img src="https://dvdz.design/random/imgs/img2.jpg" /></a></h1>
+	<h1><a href="#">yes<img src="https://dvdz.design/random/imgs/img2.jpg" /></a></h1>
+</div>
  
 </div>
 
